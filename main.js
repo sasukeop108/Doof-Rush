@@ -462,6 +462,14 @@ scene("space", ({ score: initialScore = 0, rickRolled: initialRickRolled = false
         play("space");
         shake(10);
 
+        add([
+            text("USE RIGHT ARROW [ -> ] & JUMP TO ENTER THE PORTAL!", { font: "Darumadrop One", size: 34 }),
+            pos(center().x, 80),
+            anchor("center"),
+            color(100, 255, 180),
+            z(50),
+        ]);
+
         const portal = add([
             sprite("portal"),
             pos(width() - 120, center().y),
@@ -471,6 +479,13 @@ scene("space", ({ score: initialScore = 0, rickRolled: initialRickRolled = false
             body({ isStatic: true }),
             z(30),
             "portal",
+        ]);
+
+        portal.add([
+            text("ENTER HERE 🌀", { font: "Darumadrop One", size: 22 }),
+            pos(0, -70),
+            anchor("center"),
+            color(255, 255, 255),
         ]);
 
         portal.onUpdate(() => {
