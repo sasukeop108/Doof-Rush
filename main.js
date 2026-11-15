@@ -5,6 +5,7 @@ kaplay({ debugKey: "w" });
 loadFont("Darumadrop One", "assets/fonts/DarumadropOne-Regular.ttf");
 loadSprite("daven", "assets/sprites/daven.png");
 loadSprite("bg", "assets/bg/hero-bg.png");
+loadSprite("welcomeBg", "assets/bg/trail.png");
 loadSprite("overbg", "assets/bg/game-over-bg.png");
 loadSprite("spaceBg", "/assets/bg/space.jpg");
 loadSprite("spring", "assets/spring.png");
@@ -88,7 +89,7 @@ function saveHighScore(newScore) {
 scene("welcome", () => {
     startBtn.style.display = "block";
     restartBtn.style.display = "none";
-    setupBg("bg");
+    setupBg("welcomeBg");
 
     add([
         text("DOOF RUSH", { font: "Darumadrop One", size: 90 }),
