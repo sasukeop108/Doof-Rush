@@ -7,7 +7,7 @@ loadSprite("daven", "assets/sprites/daven.png");
 loadSprite("bg", "assets/bg/hero-bg.png");
 loadSprite("welcomeBg", "assets/bg/trail.png");
 loadSprite("overbg", "assets/bg/game-over-bg.png");
-loadSprite("spaceBg", "/assets/bg/space.jpg");
+loadSprite("spaceBg", "assets/bg/space.jpg");
 loadSprite("spring", "assets/spring.png");
 loadSprite("portal", "assets/sprites/portal.png");
 
